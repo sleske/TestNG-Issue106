@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>testng</groupId>
+  <artifactId>issue_106_demo</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <description>Demonstration of github issue #106 for TestNG</description>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.10</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>${basedir}/src/test/resources/testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>6.2.1</version>
+      <!--
+Set this version to see the change in test execution order.
+            <version>6.0.1</version>
+-->
+    </dependency>
+  </dependencies>
+</project>

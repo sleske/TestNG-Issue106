@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Demo for issue 106">
+    <test name="Default suite">        
+        <packages>
+            <package name="issue106"></package>
+        </packages>
+    </test>
+</suite>
